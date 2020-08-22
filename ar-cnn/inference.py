@@ -23,7 +23,23 @@ import pypianoroll
 import keras
 import numpy as np
 from losses import Loss
-from constants import Constants
+class Constants():
+    # Make it a multiple of the batch size for best (balanced) performance
+    samples_per_ground_truth_data_item = 8
+    training_validation_split = 0.9
+    # Number of Bars
+    bars = 8
+    # Number of Beats Per Bar
+    beats_per_bar = 4
+    beat_resolution = 4
+    # number of bars to be shifted
+    bars_shifted_per_sample = 4
+    # Total number of pitches in a Pianoroll
+    number_of_pitches = 256
+    # Total number of Tracks
+    number_of_channels = 1
+    output_file_path = "output_{}.mid"
+    tempo = 120  # 100 bpm
 import copy
 
 logger = logging.getLogger(__name__)
