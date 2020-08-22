@@ -21,7 +21,7 @@ import os
 
 class Constants():
     # Make it a multiple of the batch size for best (balanced) performance
-    samples_per_ground_truth_data_item = 8
+    samples_per_ground_truth_data_item = 32
     training_validation_split = 0.9
     # Number of Bars
     bars = 32
@@ -29,7 +29,7 @@ class Constants():
     beats_per_bar = 4
     beat_resolution = 4
     # number of bars to be shifted
-    bars_shifted_per_sample = 4
+    bars_shifted_per_sample = 32
     # Total number of pitches in a Pianoroll
     number_of_pitches = 512
     # Total number of Tracks
