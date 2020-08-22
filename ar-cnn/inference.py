@@ -32,8 +32,8 @@ logger = logging.getLogger(__name__)
 class Inference:
     def __init__(self, model=None):
         self.model = model
-        self.number_of_timesteps = (Constants.beat_resolution *
-                                    Constants.beats_per_bar * Constants.bars)
+        self.number_of_timesteps = 1024 #(Constants.beat_resolution *
+                                        #Constants.beats_per_bar * Constants.bars)
 
     def load_model(self, model_path):
         """
