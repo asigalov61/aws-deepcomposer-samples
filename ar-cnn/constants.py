@@ -24,12 +24,12 @@ class Constants():
     samples_per_ground_truth_data_item = 8
     training_validation_split = 0.9
     # Number of Bars
-    bars = 16
+    bars = 64
     # Number of Beats Per Bar
     beats_per_bar = 4
-    beat_resolution = 16
+    beat_resolution = 4
     # number of bars to be shifted
-    bars_shifted_per_sample = 16
+    bars_shifted_per_sample = 32
     # Total number of pitches in a Pianoroll
     number_of_pitches = 1024
     # Total number of Tracks
