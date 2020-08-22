@@ -35,7 +35,7 @@ class Constants():
     # number of bars to be shifted
     bars_shifted_per_sample = 4
     # Total number of pitches in a Pianoroll
-    number_of_pitches = 256
+    number_of_pitches = 128
     # Total number of Tracks
     number_of_channels = 1
     output_file_path = "output_{}.mid"
