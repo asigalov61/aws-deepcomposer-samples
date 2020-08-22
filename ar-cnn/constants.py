@@ -24,7 +24,7 @@ class Constants():
     samples_per_ground_truth_data_item = 8
     training_validation_split = 0.9
     # Number of Bars
-    bars = 64
+    bars = 32
     # Number of Beats Per Bar
     beats_per_bar = 4
     beat_resolution = 4
