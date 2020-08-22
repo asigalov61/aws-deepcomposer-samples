@@ -21,17 +21,17 @@ import os
 
 class Constants():
     # Make it a multiple of the batch size for best (balanced) performance
-    samples_per_ground_truth_data_item = 16
+    samples_per_ground_truth_data_item = 8
     training_validation_split = 0.9
     # Number of Bars
     bars = 16
     # Number of Beats Per Bar
     beats_per_bar = 4
-    beat_resolution = 4
+    beat_resolution = 16
     # number of bars to be shifted
     bars_shifted_per_sample = 16
     # Total number of pitches in a Pianoroll
-    number_of_pitches = 256
+    number_of_pitches = 1024
     # Total number of Tracks
     number_of_channels = 1
     output_file_path = "outputs/output_{}.mid"
