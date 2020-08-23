@@ -170,7 +170,7 @@ class ArCnnModel():
         output = Conv2D(1, 1, activation='linear')(up_sampling_layers[-1])
         model = Model(inputs=inputs, outputs=output)
         optimizer = self.get_optimizer(self.optimizer_enum, self.learning_rate)
-        model.compile(optimizer=optimizer, loss='categorical_crossentropy') # loss=Loss.built_in_softmax_kl_loss)
+        model.compile(optimizer=optimizer, loss=Loss.built_in_softmax_kl_loss) # loss=Loss.built_in_softmax_kl_loss)
         if self.pre_trained:
             model.load_weights(self.pre_trained)
         model.summary()
