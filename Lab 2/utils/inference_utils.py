@@ -16,7 +16,7 @@
 import tensorflow as tf
 import numpy as np
 
-from utils import path_utils, midi_utils, display_utils
+import path_utils, midi_utils, display_utils
 
 # --- local samples------------------------------------------------------------------
 
